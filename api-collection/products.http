@@ -1,0 +1,39 @@
+@baseUrl=http://localhost:3000/api
+@resourceName=products
+
+# Product
+
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}
+
+###
+
+# @name filter
+GET {{baseUrl}}/{{resourceName}}?price=1000
+
+###
+
+# @name addNew
+POST {{baseUrl}}/{{resourceName}}
+content-type: application/json
+
+{
+    "name":"Cây độc lạ",
+    "urlParam":"cay-doc-la"
+}
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resourceName}}/2
+content-type: application/json
+
+{
+    "name":"Cây dược liệu", 
+    "urlParam":"cay-duoc-lieu"
+}
+
+###
+
+# @name remove
+DELETE {{baseUrl}}/{{resourceName}}/2

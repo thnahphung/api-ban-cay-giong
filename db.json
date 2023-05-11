@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Cây ăn quả",
+      "urlParam": "cay-an-qua",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
+    },
+    {
+      "name": "Cây dược liệu",
+      "urlParam": "cay-duoc-lieu",
+      "createdAt": 1683562011762,
+      "updatedAt": 1683562011762,
+      "id": 2
+    },
+    {
+      "name": "Cây độc lạ",
+      "urlParam": "cay-doc-la",
+      "createdAt": 1683776206388,
+      "updatedAt": 1683776206388,
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Cam chanh",
+      "urlParam": "cam-chanh",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759,
+      "categoryId": 1,
+      "price": 15000,
+      "salePrice": 15000
+    },
+    {
+      "id": 2,
+      "name": "Cam ranh",
+      "urlParam": "cam-ranh",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759,
+      "categoryId": 1,
+      "price": 20000,
+      "salePrice": 20000
+    },
+    {
+      "id": 3,
+      "name": "Cam vinh",
+      "urlParam": "cam-vinh",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759,
+      "categoryId": 1,
+      "price": 10000,
+      "salePrice": 10000
+    }
+  ],
+  "profile": {
+    "name": "phung"
+  }
+}
