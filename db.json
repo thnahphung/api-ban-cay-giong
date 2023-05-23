@@ -2,21 +2,21 @@
   "categories": [
     {
       "id": 1,
-      "name": "Cây ăn quả",
-      "urlParam": "cay-an-qua",
+      "name": "Cây giống ăn quả",
+      "urlParam": "cay-giong-an-qua",
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759
     },
     {
-      "name": "Cây dược liệu",
-      "urlParam": "cay-duoc-lieu",
+      "name": "Cây giống dược liệu",
+      "urlParam": "cay-giong-duoc-lieu",
       "createdAt": 1683562011762,
       "updatedAt": 1683562011762,
       "id": 2
     },
     {
-      "name": "Cây độc lạ",
-      "urlParam": "cay-doc-la",
+      "name": "Cây giống độc lạ",
+      "urlParam": "cay-giong-doc-la",
       "createdAt": 1683776206388,
       "updatedAt": 1683776206388,
       "id": 3
@@ -25,36 +25,117 @@
   "products": [
     {
       "id": 1,
-      "name": "Cam chanh",
-      "urlParam": "cam-chanh",
+      "name": "Cây giống Cam Chanh",
+      "urlParam": "cay-giong-cam-chanh",
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759,
       "categoryId": 1,
-      "price": 15000,
-      "salePrice": 15000
+      "originPrice": 35000,
+      "salePrice": 35000,
+      "type": "Cây",
+      "rate": 5,
+      "image": [
+        "https://giongcaytrong.org/uploads/shops/2016_09/cay-cam-chanh-2.jpg"
+      ],
+      "description": ""
     },
     {
       "id": 2,
-      "name": "Cam ranh",
-      "urlParam": "cam-ranh",
+      "name": "Cây giống Cam Canh",
+      "urlParam": "cay-giong-cam-Canh",
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759,
       "categoryId": 1,
-      "price": 20000,
-      "salePrice": 20000
+      "originPrice": 35000,
+      "salePrice": 35000,
+      "type": "Cây",
+      "rate": 5,
+      "image": [
+        "https://giongcaytrong.org/uploads/shops/2016_09/camduong-canh.jpg",
+        "https://giongcaytrong.org/uploads/shops/cay-cam-duong-canh-7.jpg",
+        "https://giongcaytrong.org/uploads/shops/cay-cam-duong-canh-8.jpg",
+        "https://giongcaytrong.org/uploads/shops/cay-cam-duong-canh-9.jpg",
+        "https://giongcaytrong.org/uploads/shops/cay-cam-duong-canh-10.jpg"
+      ]
     },
     {
       "id": 3,
-      "name": "Cam vinh",
-      "urlParam": "cam-vinh",
+      "name": "Cây giống Cam Vinh",
+      "urlParam": "cay-giong-cam-vinh",
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759,
       "categoryId": 1,
-      "price": 10000,
-      "salePrice": 10000
+      "originPrice": 35000,
+      "salePrice": 35000,
+      "type": "Cây",
+      "rate": 5,
+      "image": [
+        "https://giongcaytrong.org/uploads/shops/2016_09/trai-cam-vinh.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cây giống chuối Cẩm Thạch",
+      "urlParam": "cay-giong-chuoi-cam-thach",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759,
+      "categoryId": 1,
+      "originPrice": 100000,
+      "salePrice": 100000,
+      "type": "Cây",
+      "rate": 5,
+      "image": [
+        "https://giongcaytrong.org/uploads/shops/2016_09/chuoi-cam-thach-3.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Cây giống chuối Đỏ Đăc Ca",
+      "urlParam": "cay-giong-chuoi-do-dac-ca",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759,
+      "categoryId": 1,
+      "originPrice": 35000,
+      "salePrice": 35000,
+      "type": "Cây",
+      "rate": 5,
+      "image": [
+        "https://giongcaytrong.org/uploads/shops/2016_09/chuoi-do-dac-ca.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Cây giống nho Hạ Đen",
+      "urlParam": "cay-giong-nho-ha-den",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759,
+      "categoryId": 1,
+      "originPrice": 100000,
+      "salePrice": 100000,
+      "type": "Cây",
+      "rate": 5,
+      "image": [
+        "https://giongcaytrong.org/uploads/shops/cay-giong-nho-ha-den-3.jpg",
+        "https://giongcaytrong.org/uploads/shops/cay-giong-nho-ha-den-4.jpg",
+        "https://giongcaytrong.org/uploads/shops/cay-giong-nho-ha-den-1.jpg",
+        "https://giongcaytrong.org/uploads/shops/cay-giong-nho-ha-den-9.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Cây giống nho Ngón Tay",
+      "urlParam": "cay-giong-nho-ngon-tay",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759,
+      "categoryId": 1,
+      "originPrice": 150000,
+      "salePrice": 150000,
+      "type": "Cây",
+      "rate": 5,
+      "image": [
+        "https://giongcaytrong.org/uploads/shops/2019_04/cay-giong-nho-ngon-tay.jpg",
+        "https://giongcaytrong.org/uploads/shops/2019_04/nho-ngon-tay.jpg"
+      ]
     }
-  ],
-  "profile": {
-    "name": "phung"
-  }
+  ]
 }
