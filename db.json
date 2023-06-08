@@ -20,6 +20,20 @@
       "createdAt": 1683776206388,
       "updatedAt": 1683776206388,
       "id": 3
+    },
+    {
+      "name": "Cây độc lạ",
+      "urlParam": "cay-doc-la",
+      "createdAt": 1686198761516,
+      "updatedAt": 1686198761516,
+      "id": 4
+    },
+    {
+      "name": "Cây độc lạ",
+      "urlParam": "cay-doc-la",
+      "createdAt": 1686198960995,
+      "updatedAt": 1686198960995,
+      "id": 5
     }
   ],
   "products": [
@@ -191,14 +205,6 @@
       "updatedAt": 1616346753759,
       "categoryId": 2,
       "originPrice": 20000,
-      "description": ""
-    },
-    {
-      "name": "Cây độc lạ",
-      "urlParam": "cay-doc-la",
-      "createdAt": 1686196311509,
-      "updatedAt": 1686196311509,
-      "id": 12,
       "salePrice": 20000,
       "type": "Cây",
       "rate": 5,
@@ -206,6 +212,13 @@
         "https://giongcaytrong.org/uploads/shops/2019_05/rau-bo-khai-moi-nhat.jpg"
       ],
       "description": ""
+    },
+    {
+      "name": "Cây độc lạ",
+      "urlParam": "cay-doc-la",
+      "createdAt": 1686196311509,
+      "updatedAt": 1686196311509,
+      "id": 12
     }
   ]
 }
