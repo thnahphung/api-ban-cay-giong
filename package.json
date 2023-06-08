@@ -2,14 +2,14 @@
   "name": "json-server",
   "version": "1.0.0",
   "description": "use json-server",
-  "main": "main.js",
+  "main": "index.js",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main.js",
-    "start": "node main.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [
     "json-server"
