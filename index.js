@@ -29,10 +29,10 @@ server.use((req, res, next) => {
 router.render = (req, res) => {
     const headers = res.getHeaders()
     const totalCountHeader = headers['x-total-count']
-    const linkHeader = headers['link']
-    const linkParse = parseLinkHeader(linkHeader)
 
     if (req.method === 'GET' && totalCountHeader) {
+        const linkHeader = headers['link']
+        const linkParse = parseLinkHeader(linkHeader)
         const result = {
             data: res.locals.data,
             totalCount: totalCountHeader || 0,
