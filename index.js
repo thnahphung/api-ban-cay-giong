@@ -52,7 +52,7 @@ server.listen(3000, () => {
 
 function parseLinkHeader(linkHeader) {
     if (linkHeader === '')
-        return linkHeader;
+        return {};
 
     const linkHeadersArray = linkHeader.split(", ").map(header => header.split("; "));
     const linkHeadersMap = linkHeadersArray.map(header => {
