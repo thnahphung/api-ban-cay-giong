@@ -1,7 +1,8 @@
-const jsonServer = require('json-server')
-const server = jsonServer.create()
-const router = jsonServer.router('db.json')
-const middlewares = jsonServer.defaults()
+
+import jsonServer from 'json-server';
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
 
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares)
@@ -25,10 +26,39 @@ server.use((req, res, next) => {
     next()
 })
 
+router.render = (req, res) => {
+    const headers = res.getHeaders()
+    const totalCountHeader = headers['x-total-count']
+    const linkHeader = headers['link']
+    const linkParse = parseLinkHeader(linkHeader)
+
+    if (req.method === 'GET' && totalCountHeader) {
+        const result = {
+            data: res.locals.data,
+            totalCount: totalCountHeader || 0,
+            link: linkParse
+        }
+        return res.jsonp(result)
+    }
+
+    res.jsonp(res.locals.data)
+}
+
 // Use default router
 server.use('/api', router)
 server.listen(3000, () => {
     console.log('JSON Server is running')
 })
 
-module.exports = server
+function parseLinkHeader(linkHeader) {
+    if (linkHeader === '')
+        return linkHeader;
+
+    const linkHeadersArray = linkHeader.split(", ").map(header => header.split("; "));
+    const linkHeadersMap = linkHeadersArray.map(header => {
+        const thisHeaderRel = header[1].replace(/"/g, "").replace("rel=", "");
+        const thisHeaderUrl = header[0].slice(1, -1);
+        return [thisHeaderRel, thisHeaderUrl]
+    });
+    return Object.fromEntries(linkHeadersMap);
+}
