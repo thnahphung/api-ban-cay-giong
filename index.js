@@ -29,9 +29,9 @@ server.use((req, res, next) => {
 router.render = (req, res) => {
     const headers = res.getHeaders()
     const totalCountHeader = headers['x-total-count']
+    const linkHeader = headers['link']
 
-    if (req.method === 'GET' && totalCountHeader) {
-        const linkHeader = headers['link']
+    if (req.method === 'GET' && totalCountHeader && linkHeader) {
         const linkParse = parseLinkHeader(linkHeader)
         const result = {
             data: res.locals.data,
@@ -51,7 +51,7 @@ server.listen(3000, () => {
 })
 
 function parseLinkHeader(linkHeader) {
-    if (linkHeader === '')
+    if (linkHeader === '' || linkHeader === undefined)
         return {};
 
     const linkHeadersArray = linkHeader.split(", ").map(header => header.split("; "));
