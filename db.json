@@ -1026,7 +1026,8 @@
       "informations": [],
       "cart": [],
       "updatedAt": 1686997405751,
-      "createdAt": 1616346753759
+      "createdAt": 1616346753759,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-bdnSJ-NkU6gscunAOsrKDHDnmAeqWXA4YrQHa5yMg&s=10"
     }
   ],
   "orders": [
@@ -1145,6 +1146,47 @@
       "createdAt": 1687006965230,
       "updatedAt": 1687006965230,
       "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "user": {
+        "id": 1,
+        "name": "Phú",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-bdnSJ-NkU6gscunAOsrKDHDnmAeqWXA4YrQHa5yMg&s=10"
+      },
+      "content": "asdads",
+      "rate": 3,
+      "productId": 2,
+      "createdAt": 1687101072907,
+      "updatedAt": 1687101072907,
+      "id": 1
+    },
+    {
+      "user": {
+        "id": 1,
+        "name": "Phú",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-bdnSJ-NkU6gscunAOsrKDHDnmAeqWXA4YrQHa5yMg&s=10"
+      },
+      "content": "dsa",
+      "rate": 2,
+      "productId": 2,
+      "createdAt": 1687101644063,
+      "updatedAt": 1687101644063,
+      "id": 2
+    },
+    {
+      "user": {
+        "id": 1,
+        "name": "Phú",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-bdnSJ-NkU6gscunAOsrKDHDnmAeqWXA4YrQHa5yMg&s=10"
+      },
+      "content": "hahahah",
+      "rate": 4,
+      "productId": 2,
+      "createdAt": 1687184462371,
+      "updatedAt": 1687184462371,
+      "id": 3
     }
   ]
 }
