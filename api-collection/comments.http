@@ -1,0 +1,43 @@
+@baseUrl=http://localhost:3000/api
+@resourceName=comments
+
+# Categories
+
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}
+
+###
+
+# @name addNew
+POST {{baseUrl}}/{{resourceName}}
+content-type: application/json
+
+{
+    "user": {
+        "id": 1,
+        "name": "Phú",
+        "updatedAt": 1686997405751,
+        "createdAt": 1616346753759,
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-bdnSJ-NkU6gscunAOsrKDHDnmAeqWXA4YrQHa5yMg&s=10"
+    },
+    "content": "Dep qua",
+    "rate": 4,
+    "productId": 1
+
+}
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resourceName}}/2
+content-type: application/json
+
+{
+    "name":"Cây dược liệu", 
+    "urlParam":"cay-duoc-lieu"
+}
+
+###
+
+# @name remove
+DELETE {{baseUrl}}/{{resourceName}}/2
