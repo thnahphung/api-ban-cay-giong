@@ -1245,6 +1245,32 @@
       "createdAt": 1687184462371,
       "updatedAt": 1687184462371,
       "id": 3
+    },
+    {
+      "user": {
+        "id": 1,
+        "name": "Phú",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-bdnSJ-NkU6gscunAOsrKDHDnmAeqWXA4YrQHa5yMg&s=10"
+      },
+      "content": "",
+      "rate": 3,
+      "productId": 5,
+      "createdAt": 1687219081973,
+      "updatedAt": 1687219081973,
+      "id": 4
+    },
+    {
+      "user": {
+        "id": 1,
+        "name": "Phú",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-bdnSJ-NkU6gscunAOsrKDHDnmAeqWXA4YrQHa5yMg&s=10"
+      },
+      "content": "gjhbkn",
+      "rate": 3,
+      "productId": 5,
+      "createdAt": 1687219089734,
+      "updatedAt": 1687219089734,
+      "id": 5
     }
   ]
 }
